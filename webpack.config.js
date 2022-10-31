@@ -9,17 +9,18 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    allowedHosts: 'all',
+    allowedHosts: "all",
     headers: {
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
-      "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
+      "Access-Control-Allow-Headers":
+        "X-Requested-With, content-type, Authorization",
     },
     client: {
       webSocketURL: {
-        hostname: 'localhost'
+        hostname: "localhost",
       },
-    }
+    },
   },
   module: {
     rules: [
@@ -36,5 +37,5 @@ module.exports = {
         use: "file-loader",
       },
     ],
-  }
+  },
 };
