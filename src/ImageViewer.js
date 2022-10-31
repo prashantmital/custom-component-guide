@@ -14,7 +14,11 @@ const ImageViewer = ({ triggerQuery, model, modelUpdate }) => {
 
   return (
     <QuickPinchZoom onUpdate={onUpdate}>
-      <img ref={imgRef} src={model.imageUrl} />
+      <img
+        ref={imgRef}
+        style={{ objectFit: "cover", height: "100%", width: "100%" }}
+        src={model.imageUrl}
+      />
     </QuickPinchZoom>
   );
 };
